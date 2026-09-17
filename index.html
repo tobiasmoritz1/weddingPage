@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jennifer &amp; Tobias · Wir heiraten! · 26. Juni 2027</title>
+  
+  <meta name="description" content="Hochzeit von Jennifer &amp; Tobias am 26. Juni 2027 im Hubertushof, Fährbrück. Alle Infos zu Ablauf, Location, Anreise, RSVP und Kontakten.">
+  <meta name="author" content="Jennifer &amp; Tobias">
+  <meta name="theme-color" content="#9EA860">
+  
+  <!-- Open Graph Meta Tags for WhatsApp & Social Sharing -->
+  <meta property="og:title" content="Jennifer &amp; Tobias · Wir heiraten!">
+  <meta property="og:description" content="Come for the love, stay for the party! 26. Juni 2027 · Hubertushof, Fährbrück.">
+  <meta property="og:image" content="assets/images/couple.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Monogram -->
+  <link rel="icon" type="image/png" href="assets/images/monogram.png">
+
+  <!-- Fonts: The Seasons (local/fallback), Above the Beyond (local/fallback), Prata, Cormorant Garamond, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&family=Prata&family=Style+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <span>🌿 26. Juni 2027 · Hubertushof, Fährbrück</span>
+      <span class="top-bar-rsvp">Bitte um Rückmeldung bis 15.03.2027</span>
+      <a href="#rsvp" class="top-bar-btn">Jetzt zusagen &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Jennifer & Tobias">
+        <img src="assets/images/monogram.png" alt="J & T Monogramm" class="nav-monogram-img">
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <div class="mobile-menu-top">
+          <img src="assets/images/monogram.png" alt="J & T" class="mobile-menu-monogram">
+          <button class="mobile-close" id="mobileClose" aria-label="Menü schließen">&times;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Über uns</a></li>
+          <li><a href="#ablauf" class="nav-link">Ablauf</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#rsvp" class="nav-link nav-rsvp-highlight">RSVP</a></li>
+          <li><a href="#kontakte" class="nav-link">Trauzeug:innen</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <a href="#rsvp" class="btn btn-nav">Zusagen</a>
+      </div>
+    </nav>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-background-decor" aria-hidden="true">
+        <div class="leaf-motif leaf-top-left"></div>
+        <div class="leaf-motif leaf-bottom-right"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-motto">Come for the love, stay for the party</p>
+        
+        <div class="hero-monogram-wrapper">
+          <img src="assets/images/monogram.png" alt="J & T" class="hero-monogram">
+        </div>
+
+        <h1 class="hero-names">
+          <span class="name-jennifer">Jennifer</span>
+          <span class="name-amp">&amp;</span>
+          <span class="name-tobias">Tobias</span>
+        </h1>
+
+        <div class="hero-date-location">
+          <div class="date-badge">
+            <span class="date-day">26</span>
+            <div class="date-details">
+              <span class="date-month">Juni</span>
+              <span class="date-year">2027</span>
+            </div>
+          </div>
+          <div class="hero-divider"></div>
+          <p class="hero-venue">
+            <strong>Hubertushof</strong><br>
+            Fährbrück 2 · 97262 Fährbrück bei Hausen
+          </p>
+        </div>
+
+        <!-- Live Countdown -->
+        <div class="countdown-container" id="countdown">
+          <div class="countdown-title">Countdown bis zu unserem Ja-Wort</div>
+          <div class="countdown-boxes">
+            <div class="countdown-box">
+              <span class="countdown-number" id="cdDays">00</span>
+              <span class="countdown-label">Tage</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="cdHours">00</span>
+              <span class="countdown-label">Stunden</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="cdMinutes">00</span>
+              <span class="countdown-label">Minuten</span>
+            </div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="cdSeconds">00</span>
+              <span class="countdown-label">Sekunden</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#rsvp" class="btn btn-primary">
+            <span>Rückmeldung geben</span>
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#ablauf" class="btn btn-secondary">
+            <span>Ablauf ansehen</span>
+          </a>
+          <button id="addToCalendarBtn" class="btn btn-outline" title="Termin im Kalender speichern">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+            <span>In Kalender eintragen</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY & INVITATION SECTION -->
+    <section class="section story-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          
+          <div class="story-text-card">
+            <span class="section-script-badge">Wahre Liebe verdient eine Party</span>
+            <h2 class="section-title">Wir sagen Ja!</h2>
+
+            <div class="invitation-letter">
+              <p class="lead-poem">
+                Wir haben uns gefunden.<br>
+                Wir sind zusammen gewachsen.<br>
+                Wir haben gelacht, gelebt, gefeiert – und manchmal auch diskutiert.<br>
+                Nach all den Jahren wissen wir: <strong>So soll es sein, so kann es bleiben.</strong>
+              </p>
+
+              <div class="quote-divider">
+                <span>✦ ✦ ✦</span>
+              </div>
+
+              <p>
+                Jetzt wollen wir uns das Wichtigste geben, was wir haben: <strong>unser Wort.</strong><br>
+                Und wir möchten diesen besonderen Moment mit den Menschen teilen, die uns auf unserem Weg begleitet haben.
+              </p>
+
+              <div class="ceremony-callout">
+                <div class="callout-icon">💍</div>
+                <div class="callout-content">
+                  <p class="callout-text">
+                    Um <strong>14:00 Uhr</strong> sagen wir bei unserer <strong>freien Trauung im Hubertushof, Fährbrück</strong> Ja zueinander.
+                  </p>
+                  <p class="callout-sub">
+                    Kommt dafür bitte um <strong>13:45 Uhr</strong> an, damit wir gemeinsam und entspannt in diesen besonderen Moment starten können.
+                  </p>
+                </div>
+              </div>
+
+              <p class="conclusion-text">
+                Wir wollen mit euch lachen, tanzen, trinken, feiern und diesen Tag so richtig auskosten.
+              </p>
+
+              <div class="signature-block">
+                <span class="we-do-calligraphy">We do</span>
+                <p class="signature-names">Jennifer &amp; Tobias</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-photo-card">
+            <div class="photo-frame">
+              <img src="assets/images/couple.jpg" alt="Jennifer &amp; Tobias in der Sommerwiese" class="couple-portrait-img">
+              <div class="photo-caption">
+                <span class="caption-motto">Jennifer &amp; Tobias</span>
+                <span class="caption-date">26. Juni 2027</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABLAUF / TIMELINE SECTION -->
+    <section class="section ablauf-section" id="ablauf">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-script-badge">Der Tag</span>
+          <h2 class="section-title-script">Ablauf</h2>
+          <p class="section-subtitle">
+            Ein Tag voller Liebe, Lachen und Musik. Hier ist der zeitliche Überblick über unsere gemeinsame Feier:
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- 13:45 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">13.45 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M8.5 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM20 8v6M23 11h-6"/></svg>
+              </div>
+              <div class="timeline-body">
+                <h3>Ankunft der Gäste</h3>
+                <p>Kommt entspannt an, nehmt eure Plätze ein und freut euch auf den Beginn.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14:00 -->
+          <div class="timeline-item timeline-highlight">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">14.00 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 7a3 3 0 0 1 3 3c0 2-3 5-3 5s-3-3-3-5a3 3 0 0 1 3-3z" fill="currentColor"/></svg>
+              </div>
+              <div class="timeline-body">
+                <div class="badge-highlight">Unser Moment</div>
+                <h3>Freie Trauung</h3>
+                <p>Unter freiem Himmel im idyllischen Hubertushof geben wir uns unser Wort fürs Leben.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 14:30 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">14.30 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 22h8M12 15v7M17 3l1 7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5l1-7h10z"/></svg>
+              </div>
+              <div class="timeline-body">
+                <h3>Sektempfang</h3>
+                <p>Wir stoßen gemeinsam auf die Liebe an – mit erfrischenden Drinks und feinen Häppchen.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 15:30 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">15.30 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              </div>
+              <div class="timeline-body">
+                <h3>Gruppenfotos</h3>
+                <p>Gemeinsam halten wir die schönsten Erinnerungen mit allen Freunden und Familienangehörigen fest.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 18:00 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">18.00 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+              </div>
+              <div class="timeline-body">
+                <h3>Abendessen</h3>
+                <p>Zeit für Genuss, gute Gespräche und kulinarische Highlights am festlichen Hochzeitstisch.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 20:30 -->
+          <div class="timeline-item timeline-highlight">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">20.30 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 18V5l12-2v13M9 9l12-2"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+              </div>
+              <div class="timeline-body">
+                <div class="badge-highlight">Stay for the party</div>
+                <h3>Party &amp; Tanz</h3>
+                <p>Eröffnungstanz und beste Stimmung auf der Tanzfläche bis in die Morgenstunden!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 00:00 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-time">00.00 Uhr</div>
+            <div class="timeline-card">
+              <div class="timeline-icon-wrap">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+              </div>
+              <div class="timeline-body">
+                <h3>Mitternachtssnack</h3>
+                <p>Stärkung zur Mitternacht, damit niemand schlappmacht und weitergefeiert werden kann.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & ANREISE -->
+    <section class="section location-section" id="location">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-script-badge">Der Ort</span>
+          <h2 class="section-title">Location &amp; Anreise</h2>
+          <p class="section-subtitle">
+            Wir freuen uns darauf, euch im malerischen Hubertushof in Fährbrück willkommen zu heißen.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info-card">
+            <div class="location-badge">Veranstaltungsort</div>
+            <h3 class="location-name">Hubertushof</h3>
+            <p class="location-address">
+              Fährbrück 2<br>
+              97262 Fährbrück bei Hausen (Unterfranken)
+            </p>
+
+            <div class="location-hints">
+              <div class="hint-row">
+                <span class="hint-icon">🚗</span>
+                <div>
+                  <strong>Parkmöglichkeiten:</strong> Direkt am Hubertushof stehen für alle Gäste ausreichend kostenlose Parkplätze zur Verfügung.
+                </div>
+              </div>
+              <div class="hint-row">
+                <span class="hint-icon">⏰</span>
+                <div>
+                  <strong>Ankunftszeit:</strong> Bitte plant ein, um <strong>13:45 Uhr</strong> vor Ort zu sein.
+                </div>
+              </div>
+              <div class="hint-row">
+                <span class="hint-icon">🚕</span>
+                <div>
+                  <strong>Taxis &amp; Shuttle:</strong> Von Würzburg / Hausen gibt es regionale Taxi-Dienste. Trauzeug:innen vermitteln gern Fahrgemeinschaften.
+                </div>
+              </div>
+            </div>
+
+            <div class="location-buttons">
+              <a href="https://www.google.com/maps/search/?api=1&query=Hubertushof+Fährbrück+2+97262+Hausen" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="icon" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                <span>Google Maps öffnen</span>
+              </a>
+              <a href="http://maps.apple.com/?q=Hubertushof+Fährbrück+2+97262+Hausen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Apple Maps</span>
+              </a>
+              <button class="btn btn-outline" id="copyAddressBtn">
+                <span>Adresse kopieren</span>
+              </button>
+            </div>
+            <span id="copyToast" class="copy-toast" role="status" aria-live="polite">✓ Adresse in Zwischenablage kopiert!</span>
+          </div>
+
+          <div class="location-map-card">
+            <div class="map-placeholder">
+              <iframe 
+                title="Karte von Hubertushof Fährbrück"
+                src="https://maps.google.com/maps?q=Hubertushof%20F%C3%A4hrbr%C3%BCck%202%2C%2097262%20Hausen&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP / RÜCKMELDUNG -->
+    <section class="section rsvp-section" id="rsvp">
+      <div class="container">
+        <div class="rsvp-card-wrapper">
+
+          <div class="rsvp-header text-center">
+            <span class="section-script-badge">Rückmeldung</span>
+            <h2 class="section-title">Seid ihr dabei?</h2>
+            <div class="rsvp-deadline-pill">
+              <strong>Bitte gebt uns bis zum 15.03.2027 Bescheid.</strong>
+            </div>
+            <p class="rsvp-intro">
+              Damit wir Sitzplätze, Essen und Getränke perfekt planen können, gebt uns bitte rechtzeitig eure Rückmeldung.
+            </p>
+          </div>
+
+          <form id="weddingRsvpForm" class="wedding-form">
+            <!-- Attendance Radio Toggle -->
+            <div class="form-group form-attendance-group">
+              <label class="form-group-title">Werdet ihr kommen? *</label>
+              <div class="attendance-options">
+                <label class="attendance-card">
+                  <input type="radio" name="attendance" value="ja" checked required>
+                  <span class="attendance-content">
+                    <span class="attendance-emoji">🎉</span>
+                    <span class="attendance-text">
+                      <strong>Ja, natürlich!</strong>
+                      <small>Ich / Wir feiern mit euch!</small>
+                    </span>
+                  </span>
+                </label>
+
+                <label class="attendance-card">
+                  <input type="radio" name="attendance" value="nein" required>
+                  <span class="attendance-content">
+                    <span class="attendance-emoji">🤍</span>
+                    <span class="attendance-text">
+                      <strong>Leider nein</strong>
+                      <small>Ich / Wir können leider nicht kommen</small>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Guest Names -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="guestName">Name(n) der Gäste *</label>
+                <input type="text" id="guestName" name="guestName" placeholder="z. B. Max &amp; Anna Mustermann" required class="form-input">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="guestEmail">E-Mail-Adresse *</label>
+                <input type="email" id="guestEmail" name="guestEmail" placeholder="fuer.rueckfragen@beispiel.de" required class="form-input">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="guestCount">Anzahl Personen *</label>
+                <select id="guestCount" name="guestCount" class="form-input" required>
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 Personen</option>
+                  <option value="3">3 Personen</option>
+                  <option value="4">4 Personen</option>
+                  <option value="5+">Mehr als 4 Personen</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="guestDiet">Essenspräferenzen</label>
+                <select id="guestDiet" name="guestDiet" class="form-input">
+                  <option value="alles">Keine Einschränkungen (Fleisch / Klassisch)</option>
+                  <option value="vegetarisch">Vegetarisch</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="pescetarisch">Pescetarisch (Fisch erlaubt)</option>
+                  <option value="individuell">Individuell (siehe Allergiefeld unten)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Allergies & Intolerances -->
+            <div class="form-group">
+              <label for="guestAllergies">Allergien oder Unverträglichkeiten</label>
+              <input type="text" id="guestAllergies" name="guestAllergies" placeholder="z. B. Laktose, Nüsse, Gluten (oder 'Keine')" class="form-input">
+            </div>
+
+            <!-- Song Request -->
+            <div class="form-group">
+              <label for="guestSong">🎶 Dein Wunschsong für die Tanzfläche</label>
+              <input type="text" id="guestSong" name="guestSong" placeholder="z. B. Abba – Dancing Queen" class="form-input">
+            </div>
+
+            <!-- Message to the Couple -->
+            <div class="form-group">
+              <label for="guestMessage">Persönliche Nachricht an Jennifer &amp; Tobias</label>
+              <textarea id="guestMessage" name="guestMessage" rows="3" placeholder="Wir freuen uns schon riesig auf euch..." class="form-input"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-submit-wrap">
+              <button type="submit" class="btn btn-primary btn-submit" id="submitRsvpBtn">
+                <span>Rückmeldung jetzt absenden</span>
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </div>
+
+            <div class="rsvp-footer-note">
+              <span>🔒 Eure Daten werden vertraulich behandelt und ausschließlich für die Hochzeitsplanung verwendet.</span>
+            </div>
+          </form>
+
+          <!-- Hidden Admin Quick-Viewer for Bride & Groom -->
+          <div class="rsvp-admin-link">
+            <button id="showRsvpListBtn" class="btn-text-subtle">📋 Gespeicherte Rückmeldungen anzeigen (Brautpaar-Ansicht)</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAUZEUG:INNEN & KONTAKTE -->
+    <section class="section kontakte-section" id="kontakte">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-script-badge">Eure Ansprechpartner</span>
+          <h2 class="section-title">Unsere Trauzeug:innen</h2>
+          <p class="section-subtitle">
+            Bei organisatorischen Fragen zur Hochzeit, Überraschungen, Reden oder Beiträgen helfen euch gerne unsere Trauzeug:innen weiter:
+          </p>
+        </div>
+
+        <div class="witnesses-grid">
+
+          <!-- Lorena -->
+          <div class="witness-card">
+            <div class="witness-avatar">L</div>
+            <h3 class="witness-name">Lorena</h3>
+            <span class="witness-role">Trauzeugin von Jennifer</span>
+            <a href="tel:+4915734405512" class="witness-phone">0157 34405512</a>
+            <div class="witness-actions">
+              <a href="tel:+4915734405512" class="btn btn-sm btn-outline">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Anrufen</span>
+              </a>
+              <a href="https://wa.me/4915734405512?text=Hallo%20Lorena,%20ich%20habe%20eine%20Frage%20zur%20Hochzeit%20von%20Jennifer%20und%20Tobias!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sophia -->
+          <div class="witness-card">
+            <div class="witness-avatar">S</div>
+            <h3 class="witness-name">Sophia</h3>
+            <span class="witness-role">Trauzeugin von Jennifer</span>
+            <a href="tel:+4915159839989" class="witness-phone">0151 59839989</a>
+            <div class="witness-actions">
+              <a href="tel:+4915159839989" class="btn btn-sm btn-outline">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Anrufen</span>
+              </a>
+              <a href="https://wa.me/4915159839989?text=Hallo%20Sophia,%20ich%20habe%20eine%20Frage%20zur%20Hochzeit%20von%20Jennifer%20und%20Tobias!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Janik -->
+          <div class="witness-card">
+            <div class="witness-avatar">J</div>
+            <h3 class="witness-name">Janik</h3>
+            <span class="witness-role">Trauzeuge von Tobias</span>
+            <a href="tel:+4915129903618" class="witness-phone">0151 29903618</a>
+            <div class="witness-actions">
+              <a href="tel:+4915129903618" class="btn btn-sm btn-outline">
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Anrufen</span>
+              </a>
+              <a href="https://wa.me/4915129903618?text=Hallo%20Janik,%20ich%20habe%20eine%20Frage%20zur%20Hochzeit%20von%20Jennifer%20und%20Tobias!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Leon -->
+          <div class="witness-card">
+            <div class="witness-avatar">L</div>
+            <h3 class="witness-name">Leon</h3>
+            <span class="witness-role">Trauzeuge von Tobias</span>
+            <p class="witness-note">Gemeinsam mit Janik euer Ansprechpartner für Tobias</p>
+            <div class="witness-actions">
+              <a href="tel:+4915129903618" class="btn btn-sm btn-outline">
+                <span>Kontakt über Janik</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="witnesses-info-box">
+          <div class="info-box-icon">💡</div>
+          <p>
+            <strong>Ihr plant eine Überraschung, Rede oder Aktion?</strong><br>
+            Bitte stimmt euch rechtzeitig mit unseren Trauzeug:innen ab, damit das Programm harmonisch in den Ablauf eingebunden werden kann und für uns eine echte Überraschung bleibt!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / HOCHZEITS-ABC -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-script-badge">Gut zu wissen</span>
+          <h2 class="section-title">Häufige Fragen (FAQ)</h2>
+          <p class="section-subtitle">Alles Wissenswerte rund um unseren großen Tag auf einen Blick.</p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Welchen Dresscode gibt es?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Unser Dresscode lautet <strong>Festlich &amp; sommerlich-elegant</strong>. Wählt gerne helle, sommerliche Töne (z. B. Pastell, Salbei, Creme, Blau). Die Farbe Weiß ist der Braut vorbehalten. Am wichtigsten ist uns jedoch: Zieht an, worin ihr euch wohlfühlt und durchtanzen könnt!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Was wünschen sich Jennifer &amp; Tobias zur Hochzeit?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Das größte Geschenk für uns ist es, diesen Tag gemeinsam mit euch zu feiern. Wer uns darüber hinaus eine Freude machen möchte: Unser gemeinsamer Haushalt ist bereits gut ausgestattet. Über einen Beitrag zu unseren bevorstehenden <strong>Flitterwochen</strong> freuen wir uns von Herzen.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Gibt es Übernachtungsmöglichkeiten in der Nähe?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>In Hausen, Bergtheim und im nahen Würzburg (ca. 15–20 Autominuten) gibt es mehrere Hotels und Pensionen. Da im Juni Hochzeitssaison ist, empfehlen wir euch, rechtzeitig ein Zimmer zu reservieren. Wendet euch bei Fragen auch gerne an unsere Trauzeug:innen.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Dürfen wir während der Trauung fotografieren?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Wir wünschen uns eine sogenannte <strong>„Unplugged Ceremony“</strong>. Bitte lasst eure Handys und Kameras während der freien Trauung in der Tasche, damit ihr den Moment ganz ungestört mit uns genießen könnt. Unsere professionelle Fotografin hält alles fest und wir teilen alle Bilder anschließend gerne mit euch!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Sind Kinder herzlich willkommen?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Kinder sind bei uns herzlich willkommen! Bitte gebt uns einfach im RSVP-Formular kurz Bescheid, damit wir die Plätze und das Essen für die Kleinen optimal einplanen können.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="confirmationModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Schließen">&times;</button>
+      <div class="modal-icon">🎉</div>
+      <h3 class="modal-title">Vielen Dank für deine Rückmeldung!</h3>
+      <p class="modal-desc" id="modalDesc">
+        Wir haben deine Rückmeldung erfolgreich gespeichert. Wir freuen uns riesig darauf, diesen unvergesslichen Tag mit dir zu feiern!
+      </p>
+      
+      <div class="modal-summary" id="modalSummary">
+        <!-- Filled dynamically via JS -->
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="modalOkBtn">Schließen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMIN RSVP LIST MODAL -->
+  <div class="modal-backdrop" id="adminModal" aria-hidden="true">
+    <div class="modal-card modal-wide">
+      <button class="modal-close" id="adminModalCloseBtn" aria-label="Schließen">&times;</button>
+      <div class="modal-header-flex">
+        <h3 class="modal-title">📋 Alle eingegangenen Rückmeldungen</h3>
+        <div class="admin-top-actions">
+          <button class="btn btn-sm btn-primary" id="exportCsvBtn">Als CSV exportieren</button>
+          <button class="btn btn-sm btn-outline" id="clearRsvpBtn">Zurücksetzen</button>
+        </div>
+      </div>
+      <p class="modal-desc">Übersicht aller im Browser gespeicherten Rückmeldungen:</p>
+      
+      <div class="admin-table-wrap">
+        <table class="admin-table" id="rsvpTable">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Name</th>
+              <th>E-Mail</th>
+              <th>Personen</th>
+              <th>Essen</th>
+              <th>Allergien</th>
+              <th>Song</th>
+              <th>Nachricht</th>
+              <th>Zeitstempel</th>
+            </tr>
+          </thead>
+          <tbody id="rsvpTableBody">
+            <!-- Dynamically rendered via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="assets/images/monogram.png" alt="J &amp; T" class="footer-monogram">
+      <p class="footer-names">Jennifer &amp; Tobias</p>
+      <p class="footer-motto">Come for the love, stay for the party</p>
+      <p class="footer-date">26. Juni 2027 · Hubertushof, Fährbrück</p>
+      <div class="footer-bottom">
+        <p>&copy; 2027 Jennifer &amp; Tobias · Mit Liebe gestaltet für unseren großen Tag</p>
+        <a href="#home" class="btn-to-top" aria-label="Nach oben scrollen">↑ Nach oben</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
